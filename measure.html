@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form2</title>
+   <link rel="stylesheet" href="/assets/styles/main.css">
+   <link rel="stylesheet" href="/assets/fonts/Poppins/Poppins-Regular.ttf">
+   <link rel="stylesheet" href="/assets/fonts/icons/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <header class="navbar__header">
+         <div class="navbar__header-logo">
+            <img src="/assets/public/3.jpg" alt="asoiu.jpeg">
+         </div>
+      </header>
+   </nav>
+   <main class="main__form">
+      <section class="main__form-section">
+         <div class="main__form-container">
+            <div class="main__form-head">
+               <h1 class="form__head">Qeydiyyat üçün Form</h1>
+               <p class="form__desc">Formu dolduraraq öz tədbir vaxtınızı seçə bilərsiniz.</p>
+            </div>
+            <form class="form" id="measure--form">
+               <div class="form__section">
+                  <div class="form__info-section col-12">
+                     <label for="measure_name" class="form__info-title">Tədbirin adı</label>
+                     <input type="text" name="measure_name" placeholder="Tədbirin adını qeyd edin..." class="form__info-input"
+                        required>
+                  </div>
+                  <div class="form__info-section col-12">
+                     <label for="measure_info" class="form__info-title">Tədbir haqqında məlumat</label>
+                     <input type="text" name="measure_info" placeholder="Tədbir haqqında məlumat qeyd edin..." class="form__info-input"
+                        required>
+                  </div>
+                  <div class="form__info-section col-12">
+                     <label for="measure_start" class="form__info-title">Tədbirin başlanğıc vaxtı və saatı</label>
+                     <input type="datetime-local" name="measure_start" placeholder="Vaxtını və saatını qeyd edin..."
+                        class="form__info-input" required>
+                  </div>
+                  <div class="form__info-section col-12">
+                     <label for="measure_end" class="form__info-title">Tədbirin bitmə vaxtı və saatı</label>
+                     <input type="datetime-local" name="measure_end" placeholder="Vaxtını və saatını qeyd edin..."
+                        class="form__info-input" required>
+                  </div>
+               </div>
+               <div class="form__btn">
+                  <button type="submit" name="measure_btn" class="btn-next">Davam edin</button>
+               </div>
+            </form>
+            <!-- skeleton -->
+            <div class="skeleton">
+               <div class="skeleton__head skeleton__bg"></div>
+               <div class="skeleton__body">
+                  <div class="skeleton__body-head">
+                     <div class="skeleton__body-head-header skeleton__bg col-6"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-12"></div>
+                  </div>
+                  <div class="skeleton__body-head-footer skeleton__bg"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+   <script type="module" src="assets/js/main.js"></script>
+
+</body>
+
+</html>

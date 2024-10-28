@@ -1,0 +1,34 @@
+[
+   {
+      "_id": "1",
+      "faculty_name": "Geoloji kəşfiyyat fakültəsi"
+   },
+   {
+      "_id": "2",
+      "faculty_name": "Kimya texnologiya fakültəsi"
+   },
+   {
+      "_id": "3",
+      "faculty_name": "Qaz-neft-mədən fakültəsi"
+   },
+   {
+      "_id": "4",
+      "faculty_name": "Neft Mexanika fakültəsi"
+   },
+   {
+      "_id": "5",
+      "faculty_name": "Energetika"
+   },
+   {
+      "_id": "6",
+      "faculty_name": "Istehsal proseslərinin avtomatlaşdırılması fakültəsi"
+   },
+   {
+      "_id": "7",
+      "faculty_name": "Iqtisadiyyat, beynəlxalq iqtisadi münasibətlər və menecment"
+   },
+   {
+      "_id": "8",
+      "faculty_name": "Əcnəbi vətəndaşlar üçün hazırlıq fakültəsii"
+   }
+]

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Admin Panel Rooms </title>
+   <link rel="stylesheet" href="/assets/styles/main.css">
+   <link rel="stylesheet" href="/assets/fonts/Poppins/Poppins-Regular.ttf">
+   <link rel="stylesheet" href="/assets/fonts/icons/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <header class="navbar__header">
+         <div class="navbar__header-logo">
+            <img src="/assets/public/3.jpg" alt="asoiu.jpeg">
+         </div>
+      </header>
+   </nav>
+   <main class="main__form">
+      <section class="main__form-section">
+         <div class="main__form-container admin--container">
+            <div class="main__form-head">
+               <h1 class="form__head">Tədbirlərin Listi</h1>
+               <p class="form__desc">Yeni Tədbir əlavə edə bilər və yaxud tədbirlər üzərində dəyişikliklər edə
+                  bilərsiniz...
+               </p>
+            </div>
+            <ul class="request__users">
+               <!-- <li class="users__measure-list">
+                  <div class="users__measure-head">
+                     <p class="users__measure-count">
+                        <span class="measure__list-count">
+                           1
+                        </span>
+                     </p>
+                     <ul class="users__measure-about">
+                        <li class="users__measure--head">Tədbirin adı, tədbirin zamanı</li>
+                        <li class="users__measure--desc">Tədbiri keçirən şəxs</li>
+                     </ul>
+                  </div>
+                  <ul class="users__measure-btn">
+                     <li class="measure__btn-app">
+                        <button type="button" class="app-btn delete-btn">Sil</button>
+                     </li>
+                     <li class="measure__btn-app">
+                        <button type="button" class="app-btn accept-btn">Qəbul et</button>
+                     </li>
+                  </ul>
+               </li> -->
+            </ul>
+            <p class="request__list-gif"></p>
+
+            <!-- skeleton -->
+            <div class="skeleton">
+               <div class="skeleton__head skeleton__bg"></div>
+               <div class="skeleton__body">
+                  <div class="skeleton__body-head table--skeleton skeleton__bg">
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-12 table--rows"></div>
+                  </div>
+                  <div class="skeleton__body-head-footer skeleton__bg table__btn-skeleton"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+   <script type="module" src="/assets/config/index.js"></script>
+   <script type="module" src="/assets/js/adminMeasureRequest.js"></script>
+</body>
+
+</html>

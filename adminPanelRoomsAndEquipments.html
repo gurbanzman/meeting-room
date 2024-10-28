@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Admin Panel Rooms </title>
+   <link rel="stylesheet" href="/assets/styles/main.css">
+   <link rel="stylesheet" href="/assets/fonts/Poppins/Poppins-Regular.ttf">
+   <link rel="stylesheet" href="/assets/fonts/icons/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <header class="navbar__header">
+         <div class="navbar__header-logo">
+            <img src="/assets/public/3.jpg" alt="asoiu.jpeg">
+         </div>
+      </header>
+   </nav>
+   <main class="main__form">
+      <section class="main__form-section">
+         <div class="main__form-container admin--container">
+            <div class="main__form-head">
+               <h1 class="form__head">Otaqlar və Avadanlıqlarının Listi</h1>
+               <p class="form__desc">Otağa yeni Avadanlıqları əlavə edə bilər və yaxud Avadanlıqların üzərində dəyişikliklər edə bilərsiniz...
+               </p>
+            </div>
+            <table class="form__table">
+               <thead>
+                  <tr class="table__head">
+                     <th class="table__head-title">id</th>
+                     <th class="table__head-title">Otağın nömrəsi</th>
+                     <th class="table__head-title">Avadanlıqlar</th>
+                     <th class="table__head-title">Sil</th>
+                     <th class="table__head-title">Düzəliş</th>
+                  </tr>
+               </thead>
+               <tbody class="table--body">
+                  <tr class="table__body">
+                     <!-- <td class="table__body-title">1</td>
+                     <td class="table__body-title">Murad</td>
+                     <td class="table__body-title">Novruz Bayrami</td>
+                     <td class="table__body-title">256</td> -->
+                  </tr>
+               </tbody>
+            </table>
+            <div class="table--btn">
+               <button type="button" class="btn-plus" id="room_plus"> Əlavə edin </button>
+            </div>
+            <div class="pagination">
+               <button type="button" id="prevPage" class="icon-chevron-left pagination__btn"></button>
+               <ul class="pagination__link">
+                  <!-- <li class="link" value="1">1</li>
+                  <li class="link active" value="2">2</li>
+                  <li class="link" value="3">3</li>
+                  <li class="link" value="4">4</li> -->
+               </ul>
+               <button type="button" id="nextPage" class="icon-chevron-right pagination__btn"></button>
+            </div>
+
+            <!-- skeleton -->
+            <div class="skeleton">
+               <div class="skeleton__head skeleton__bg"></div>
+               <div class="skeleton__body">
+                  <div class="skeleton__body-head table--skeleton skeleton__bg">
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6 table--rows"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-12 table--rows"></div>
+                  </div>
+                  <div class="skeleton__body-head-footer skeleton__bg table__btn-skeleton"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+   <script type="module" src="/assets/config/index.js"></script>
+   <script type="module" src="/assets/js/adminRoomAndEquipment.js"></script>
+</body>
+
+</html>

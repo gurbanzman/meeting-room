@@ -1,0 +1,45 @@
+.btn-next{
+   background: transparent;
+   color: #c2c2c2;
+   padding: 16px 20px;
+   font-size: 17px;
+   border: 1px solid #c2c2c2;
+   border-radius: 12px;
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+}
+.btn-next:hover{
+   background: #c2c2c2;
+   color: #514e4e;
+}
+.btn-plus{
+   padding: 10px;
+   font-size: 15px;
+   color: #000;
+   background: #c2c2c2;
+   border-radius: 8px;
+   cursor: pointer;
+}
+.app-btn{
+   padding: 15px;
+   font-size: 15px;
+   cursor: pointer;
+   border-radius: 19px 19px 2px 2px;
+   transition: all 0.2s ease-in-out;
+}
+.delete-btn{
+   border-right: 2px dashed rgb(108, 13, 13);
+   color: rgb(108, 13, 13);
+}
+.accept-btn{
+   border-right: 2px dashed rgb(10, 101, 10);
+   color: rgb(10, 101, 10);
+}
+.delete-btn:hover{
+   background: rgb(108, 13, 13);
+   color: #fafafa;
+}
+.accept-btn:hover{
+   background: rgb(10, 101, 10);
+   color: #fafafa;
+}

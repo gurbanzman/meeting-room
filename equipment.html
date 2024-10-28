@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form1</title>
+   <link rel="stylesheet" href="/assets/styles/main.css">
+   <link rel="stylesheet" href="/assets/fonts/Poppins/Poppins-Regular.ttf">
+   <link rel="stylesheet" href="/assets/fonts/icons/style.css">
+   <link rel="shortcut icon" href="/assets/public/3.jpg" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <header class="navbar__header">
+         <div class="navbar__header-logo">
+            <img src="/assets/public/3.jpg" alt="asoiu.jpeg">
+         </div>
+      </header>
+   </nav>
+   <main class="main__form">
+      <section class="main__form-section">
+         <div class="main__form-container">
+            <div class="main__form-head">
+               <h1 class="form__head">Qeydiyyat üçün Form</h1>
+               <p class="form__desc">Formu dolduraraq öz tədbir vaxtınızı seçə bilərsiniz.</p>
+            </div>
+            <form class="form" id="equipment--form">
+               <div class="form__section">
+                  <div class="form__check">
+                     <div class="form__info-section form--select col-12 equipment__form">      
+                        <input type="checkbox" name="measure_equipments" value="212">
+                        <label for="rooms" class="form__info-title">106 - Monitor</label>
+                     </div>  
+                  </div>
+                  
+                  <div class="form__info-section form--select form--textarea col-12">
+                     <label for="rooms" class="form__info-title">Digər</label>
+                     <textarea name="users_message" id="others" cols="30" rows="10" placeholder="Əlavələriniz varsa qeyd edə bilərsiniz..." class="form__info-input input--textarea"></textarea>
+                  </div>  
+               </div>
+               <div class="form__btn">
+                  <button type="submit" name="equipment_btn" class="btn-next">Hazırdır</button>
+               </div>
+            </form>
+            <!-- skeleton -->
+            <div class="skeleton">
+               <div class="skeleton__head skeleton__bg"></div>
+               <div class="skeleton__body">
+                  <div class="skeleton__body-head">
+                     <div class="skeleton__body-head-header skeleton__bg col-6"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-6"></div>
+                     <div class="skeleton__body-head-header skeleton__bg col-12"></div>
+                  </div>
+                  <div class="skeleton__body-head-footer skeleton__bg"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+   <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
